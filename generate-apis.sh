@@ -57,3 +57,4 @@ go mod tidy
 git add .
 git commit -s -m "API version for $TARGET_VERSION"
 git push origin $TARGET_VERSION
+git checkout main
