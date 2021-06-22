@@ -54,6 +54,8 @@ sed -i '/\/\/\ indirect$/d' go.mod
 rm go.sum
 go mod tidy
 
+rm generate-apis.sh
+
 git add .
 git commit -s -m "API version for $TARGET_VERSION"
 git push origin $TARGET_VERSION
